@@ -1,3 +1,5 @@
+var tailwindcss = require('tailwindcss')
+
 module.exports = {
   /*
   ** Headers of the page
@@ -17,10 +19,19 @@ module.exports = {
   ** Customize the progress bar color
   */
   loading: { color: '#3B8070' },
+
+  css: [
+    '@/assets/styles/app.scss'
+  ],
+
   /*
   ** Build configuration
   */
   build: {
+    postcss: [
+      tailwindcss('./tailwind.js'),
+      require('autoprefixer')
+    ],
     /*
     ** Run ESLint on save
     */
