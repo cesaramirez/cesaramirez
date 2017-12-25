@@ -1,6 +1,7 @@
 <template>
-  <div class="h-screen flex justify-center items-center bg-grey-darkest">
-    <nuxt/>
+  <div class="h-screen flex justify-center items-center bg-black">
+      <nuxt/>
+      <vue-particles color="#dedede"/>
   </div>
 </template>
 

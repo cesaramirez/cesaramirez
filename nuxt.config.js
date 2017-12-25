@@ -5,7 +5,7 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'cesaramirez',
+    title: 'Personal Web site César Ramírez',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -23,6 +23,9 @@ module.exports = {
 
   css: [
     '@/assets/styles/app.scss'
+  ],
+  plugins: [
+    {src: '~/plugins/particles.js', ssr: false}
   ],
   /*
   ** Build configuration
