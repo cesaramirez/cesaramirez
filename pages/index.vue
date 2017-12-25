@@ -1,58 +1,26 @@
 <template>
-  <section class="container">
-    <div>
-      <logo/>
-      <h1 class="title">
-        cesaramirez
-      </h1>
-      <h2 class="subtitle">
-        Nuxt.js project
-      </h2>
-      <div class="links">
-        <a href="https://nuxtjs.org/" target="_blank" class="button--green">Documentation</a>
-        <a href="https://github.com/nuxt/nuxt.js" target="_blank" class="button--grey">GitHub</a>
-      </div>
+  <section class="text-white">
+    <div class="mb-8">
+      <h1 class="text-7xl font-normal text-center">César Ramírez</h1>
+      <h2 class="text-5xl font-normal text-center">Full Stack Developer</h2>
+    </div>
+    <div class="fa-3x text-center">
+      <a href="#" class="no-underline text-white">
+        <i class="fab fa-github mx-4 opacity-50 hover:opacity-100"></i>
+      </a>
+      <a href="#" class="no-underline text-white">
+        <i class="fab fa-twitter mx-4 opacity-50 hover:opacity-100"></i>
+      </a>
+      <a href="#" class="no-underline text-white">
+        <i class="fab fa-linkedin mx-4 opacity-50 hover:opacity-100"></i>
+      </a>
     </div>
   </section>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
 
 export default {
-  components: {
-    Logo
-  }
+
 }
 </script>
-
-<style>
-.container {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.title {
-  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
-</style>
